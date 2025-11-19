@@ -1,0 +1,22 @@
+{
+    "journey": [
+        {
+            "date": "September 10th",
+            "Title": "My Boot camp Beginning: Embracing the Unknown",
+            "article": "In August 2025 I embarked on my journey with Technigo’s front-end bootcamp, stepping into the world of JavaScript, React and web development. As a complete beginner I felt both excitement and uncertainty. Yet I recognised that real growth lies outside comfort zones. Each day I opened my Mac, hammered out my js project, sometimes encountering TypeScript errors—but rather than shrink back I embraced them as priceless learning moments. This early phase taught me resilience, curiosity and the invaluable mindset that every bug is an opportunity.",
+            "link": "link"
+        },
+        {
+            "date": "September 25th",
+            "name": "Building My Recipe App: Learning by Doing",
+            "article": "One of my favorite learning moments was creating my own recipe app from scratch using HTML, CSS, and JavaScript. I wanted to make a simple and friendly space to share recipes. It wasn’t easy at first—my API worked but didn’t show the data correctly, and debugging felt endless. But solving those issues step by step taught me patience, structure, and how logic connects everything on a webpage. Building something real showed me that learning by doing is the best way to grow as a developer.",
+            "link": "link"
+        },
+        {
+            "date": "November 11th",
+            "name": "Reflecting on the Journey: Growth and Mindset",
+            "article": "rLooking back on my coding journey so far, I realize that the most valuable lesson isn’t just about writing code—it’s about mindset. I’ve learned to stay curious, face errors calmly, and celebrate small progress every day. Studying in Technigo’s bootcamp has shown me that consistency matters more than perfection. Some days I move fast, other days I just fix one tiny bug—but both count as growth. Through this process, I’ve started to see myself not just as a learner, but as a developer in the making.",
+            "link": "link"
+        }
+    ]
+}

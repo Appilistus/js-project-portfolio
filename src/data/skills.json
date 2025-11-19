@@ -1,0 +1,47 @@
+{
+    "skills": [
+        {
+            "title": "Code",
+            "skills": [
+                "HTML5",
+                "CSS3",
+                "JavaScript",
+                "TypeScript",
+                "Node.js",
+                "React",
+                "github"
+            ]
+        },
+        {
+            "title": "Toolebox",
+            "skills": [
+                "Postman",
+                "Adobe Photoshop",
+                "Adobe Illustrator",
+                "Figma",
+                "Canva",
+                "Slack",
+                "Notion"
+            ]
+        },
+        {
+            "title": "AI Tools",
+            "skills": [
+                "Chat GPT",
+                "Gemini",
+                "Cursor",
+                "Codex",
+                "GitHub copilot"
+            ]
+        },
+        {
+            "title": "More",
+            "skills": [
+                "Agile methodology",
+                "Web Accessibility",
+                "Communication",
+                "Problem solving"
+            ]
+        }
+    ]
+}
