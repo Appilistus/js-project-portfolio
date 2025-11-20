@@ -15,5 +15,3 @@ export const Icon = (props) => {
 
     return <span className={`icon ${props.className}`}>{icons[props.name]}</span>
 }
-
-export default Icon;

@@ -1,31 +1,34 @@
 {
   "projects": [
     {
-      "name": "Business site",
-      "image": "https://images.unsplash.com/photo-1557008075-7f2c5efa4cfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2497&q=80",
+      "title": "Business site",
+      "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+      "description":"A responsive website introducing an AI learning platform designed for children. The design emphasizes clarity, warmth, and curiosity, creating a trustworthy experience for parents and educators. The layout adapts seamlessly across devices to maintain accessibility and engagement.",
       "tags": [
         "HTML5",
         "CSS3",
         "JavaScript"
       ],
-      "netlify": "link",
-      "github": "link"
+      "netlify": "https://ai-compass-business-site.netlify.app/",
+      "github": "https://github.com/Appilistus/js-project-business-site"
     },
     {
-      "name": "Recipe app",
+      "title": "Recipe app",
       "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+      "description": "An interactive recipe platform that displays data from a public API with search, filter, and sorting functions. Built with a clean and friendly interface to inspire users to find quick, everyday recipes. Focused on intuitive interaction and consistent data structure to enhance usability.",
       "tags": [
         "HTML5",
         "CSS3",
         "JavaScript",
         "APIs"
       ],
-      "netlify": "link",
-      "github": "link"
+      "netlify": "https://js-project-recipe-library-site.netlify.app/",
+      "github": "https://github.com/Appilistus/js-project-recipe-library"
     },
     {
-      "name": "Weather app",
+      "title": "Weather app",
       "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+      "description": "A minimalist weather application displaying live data and a five-day forecast via an external API. The layout prioritizes readability and balance, offering weather insights at a glance. Designed with responsive structure and straightforward UI components for clarity.",
       "tags": [
         "HTML5",
         "CSS3",
@@ -33,12 +36,13 @@
         "TypeScript",
         "APIs"
       ],
-      "netlify": "link",
-      "github": "link"
+      "netlify": "https://poodles3-weather-app.netlify.app/",
+      "github": "https://github.com/Appilistus/js-project-weather-app"
     },
     {
-      "name": "Web Accessibility app",
+      "title": "Web Accessibility app",
       "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+      "description": "A group project dedicated to promoting accessibility and inclusive web experiences. The site follows WCAG principles with attention to contrast, keyboard navigation, and semantic HTML. Highlights the importance of thoughtful design that serves every user equally.",
       "tags": [
         "HTML5",
         "CSS3",

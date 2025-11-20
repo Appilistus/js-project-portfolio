@@ -1,4 +1,26 @@
 body {
-  background: pink;
-  color: hotpink;
+  background: #fff;
+  color: #202020;
+}
+
+.card-image {
+  width: 200px;
+  height: auto;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #ff7f4f;
+  border-radius: 8px;
+  color: #ff7f4f;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.hero-image,
+.contact-image {
+  width: 300px;
+  height: auto;
 }

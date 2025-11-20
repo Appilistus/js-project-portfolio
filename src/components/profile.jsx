@@ -6,8 +6,6 @@ const profileImages = {
 
 export const profileImg = (props) => {
     return (
-        <profileImg src={props.src} alt=""/>
+        <img src={props.src} alt=""/>
     )
 }
-
-export default profileImg;
