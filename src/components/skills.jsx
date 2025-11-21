@@ -4,7 +4,7 @@ export const Skills = () => {
     return (
         <section className="skills">
             <div className="skill-title">
-                <h2>Skills</h2>
+                <h2 className="section-title">Skills</h2>
             </div>
             <div className="my-skills">
                 {skills.skills.map((category) => {

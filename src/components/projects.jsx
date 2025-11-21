@@ -4,7 +4,7 @@ import { ProjectCard } from "./cards"
 export const Project = () => {
     return (
         <>
-            <h2>Featured Projects</h2>
+            <h2 className="section-title">Featured Projects</h2>
             <div className="project-cards">
                 {projects.projects.map((project) => (
                     <ProjectCard

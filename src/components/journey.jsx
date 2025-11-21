@@ -5,7 +5,7 @@ import { JourneyCard } from "./cards";
 export const Journey = () => {
     return (
         <>
-            <h2>My Journey</h2>
+            <h2 className="section-title">My Journey</h2>
             <div className="journey-cards">
                 {journey.journey.map((post) => {
                     return (
