@@ -1,5 +1,5 @@
 import profileImage from "../images/hello3.png"
-// import { Icon } from "./icons"
+import { Icon } from "./icons"
 
 export const Contact = () => {
     return (
@@ -13,6 +13,8 @@ export const Contact = () => {
                 <h2>Let's talk</h2>
                 <p>Asako Kanno</p>
                 <p>asako.k1317@outlook.com</p>
+                <Icon name="linkedin" size={28} />
+                <Icon name="github" size={28} />
             </div>
         </section>
     )

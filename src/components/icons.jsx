@@ -1,17 +1,20 @@
-const icons = {
-    gitHub: "",
-    LinkedIn: ""
-}
+import githubIcon from "../images/github.png"
+import linkedinIcon from "../images/linkedin.png"
 
-export const Icon = (props) => {
-    if (!props.name) {
-        return null
+export const Icon = ({ name, size= 28 }) => {
+    const icons = {
+        github: githubIcon,
+        linkedin: linkedinIcon,
     }
 
-    if (!(props.name in icons)) {
-        console.warn(`Icon with name "${props.name}" does not exist.`)
-        return null
-    }
+    const selectedIcon = icons[name]
 
-    return <span className={`icon ${props.className}`}>{icons[props.name]}</span>
+    return (
+        <img
+            src={selectedIcon}
+            alt={name + " icon"}
+            style={{ width: size, height: size}}
+            className="icon"
+        />
+    )
 }

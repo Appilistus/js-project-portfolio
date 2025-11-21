@@ -1,5 +1,5 @@
 import ProfileImg from "../images/profile3.png"
-// import { Icon } from "./icons"
+import { Icon } from "./icons"
 
 export const Hero = () => {
     return (
@@ -10,8 +10,8 @@ export const Hero = () => {
                 <p>Creating friendly experiences for everyday life.</p>
                 <p>I like building web experiences that feel clear, warm, and supportive.</p>
                 <p>I care about usability and thoughtful design, and I believe technology should simply help people feel at ease in their daily lives.</p>
-            {/* <Icon></Icon>
-            <Icon></Icon> */}
+                <Icon name="linkedin" size={28} />
+                <Icon name="github" size={28} />
             </div>
             <div className="hero-image">
                 <img
