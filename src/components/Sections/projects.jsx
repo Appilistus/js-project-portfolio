@@ -1,11 +1,13 @@
-import projects from "../data/projects.json"
-import { ProjectCard } from "./cards"
+import styled from "styled-components"
+import projects from "../../data/projects.json"
+import { ProjectCard } from "../common/cards"
+import { Heading2 } from "../common/typography"
 
-export const Project = () => {
+export const Projects = () => {
     return (
         <>
-            <h2 className="section-title">Featured Projects</h2>
-            <div className="project-cards">
+            <Heading2>Featured Projects</Heading2>
+            <ProjectWrapper>
                 {projects.projects.map((project) => (
                     <ProjectCard
                         key={project.title}
@@ -17,7 +19,16 @@ export const Project = () => {
                         github={project.github}
                     />
                 ))}
-            </div>
+            </ProjectWrapper>
         </>
     )
 }
+
+// Styled component below
+
+const ProjectWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 40px;
+`

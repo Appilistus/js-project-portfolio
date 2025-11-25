@@ -1,5 +1,5 @@
-import githubIcon from "../images/github.png"
-import linkedinIcon from "../images/linkedin.png"
+import githubIcon from "../../images/github.png"
+import linkedinIcon from "../../images/linkedin.png"
 
 export const Icon = ({ name, size= 28 }) => {
     const icons = {

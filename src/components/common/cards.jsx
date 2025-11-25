@@ -1,18 +1,21 @@
+import styled from "styled-components"
 import { Button } from "./button"
+import { Heading3, Heading4, Paragraph } from "./typography"
+import { StyledUl } from "../../styles/theme"
 
 export const ProjectCard = ({image,title,description,tags,netlify,github}) => {
     return (
-        <div className="card">
+        <Card>
             <img 
                 src={image} 
                 alt="" 
                 className="card-image"
             />
-            <h3>{title}</h3>
-            <p>{description}</p>
-            <ul>
+            <Heading3>{title}</Heading3>
+            <Paragraph>{description}</Paragraph>
+            <StyledUl>
                 <li>{tags}</li>
-            </ul>
+            </StyledUl>
 
             <div className="project-links">
                 <Button 
@@ -30,21 +33,21 @@ export const ProjectCard = ({image,title,description,tags,netlify,github}) => {
                     Code
                 </Button>
             </div>
-        </div>
+        </Card>
     )
 }
 
 export const JourneyCard = ({image, date, title, text, link }) => {
     return (
-        <div className="card">
+        <Card>
             <img
                 src={image}
                 alt=""
                 className="card-image"
             />
-            <h4>{date}</h4>
-            <h3>{title}</h3>
-            <p>{text}</p>
+            <Heading4>{date}</Heading4>
+            <Heading3>{title}</Heading3>
+            <Paragraph>{text}</Paragraph>
             <Button 
                 href={link}
                 target="_blank"
@@ -52,6 +55,25 @@ export const JourneyCard = ({image, date, title, text, link }) => {
             >
                 Read Article
             </Button>
-        </div>
+        </Card>
     )
 }
+
+// Styled Component bellow
+
+const Card = styled.div`
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-direction: center;
+
+    img {
+        width: 200px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-bottom: 20px;
+    }
+`

@@ -1,9 +1,11 @@
-import { Project } from "../src/components/projects";
-import { Contact } from "../src/components/contact";
-import { Hero } from "../src/components/hero";
-import { Journey } from "../src/components/journey";
-import { Skills } from "../src/components/skills";
-import { Tech } from "../src/components/tech";
+// import { GlobalStyle } from "../styles/globalStyles";
+import { ThemeProvider } from "styled-components";
+import { Projects } from "./components/Sections/projects";
+import { Contact } from "./components/Sections/contact";
+import { Hero } from "./components/Sections/hero";
+import { Journey } from "./components/Sections/journey";
+import { Skills } from "./components/Sections/skills";
+import { Tech } from "./components/Sections/tech";
 
 export const App = () => {
   return (
@@ -12,7 +14,7 @@ export const App = () => {
 
       <Skills />
 
-      <Project />
+      <Projects />
 
       <Tech />
 

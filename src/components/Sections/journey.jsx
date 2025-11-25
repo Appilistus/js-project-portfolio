@@ -1,11 +1,12 @@
-import journey from "../data/journey.json"
-import { JourneyCard } from "./cards";
+import journey from "../../data/journey.json"
+import { JourneyCard } from "../common/cards";
+import { Heading2 } from "../common/typography";
 
 
 export const Journey = () => {
     return (
         <>
-            <h2 className="section-title">My Journey</h2>
+            <Heading2>My Journey</Heading2>
             <div className="journey-cards">
                 {journey.journey.map((post) => {
                     return (

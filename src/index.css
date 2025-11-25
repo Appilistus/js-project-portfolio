@@ -1,28 +1,4 @@
-body {
-  padding: 50px;
-  background: #fff;
-  color: #202020;
-}
 
-.section-title {
-  display: flex;
-  align-self: center;
-}
-
-.hero-image,
-.contact-image {
-  width: 300px;
-  height: auto;
-}
-
-.card {
-  max-width: 300px;
-}
-
-.card-image {
-  width: 200px;
-  height: auto;
-}
 
 .button {
   padding: 10px 20px;
@@ -33,15 +9,6 @@ body {
   text-decoration: none;
 }
 
-.hero-section {
-  display: flex;
-  justify-content: space-around;
-}
-
-.my-skills {
-  display: flex;
-  justify-content: space-around;
-}
 
 .project-cards {
   display: flex;
@@ -55,11 +22,6 @@ body {
 }
 
 .journey-cards {
-  display: flex;
-  justify-content: space-around;
-}
-
-.contact-container {
   display: flex;
   justify-content: space-around;
 }
