@@ -6,8 +6,9 @@ export const Tech = () => {
         <TechSkills>
             <Heading2>Tech</Heading2>
             <Paragraph>
-                HTML, CSS, JavaScript, React, Node.js, Mongo DB, Web Accessibility,
-                APIs, mob-programming, pair-programming, GitHub.
+                HTML, CSS, JavaScript, React, Node.js, Mongo DB, <br />
+                Web Accessibility, APIs, mob-programming, <br />
+                pair-programming, GitHub.
             </Paragraph>
         </TechSkills>
     )
@@ -18,4 +19,6 @@ export const Tech = () => {
 const TechSkills = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
 `

@@ -13,26 +13,25 @@ export const ProjectCard = ({image,title,description,tags,netlify,github}) => {
             />
             <Heading3>{title}</Heading3>
             <Paragraph>{description}</Paragraph>
-            <StyledUl>
-                <li>{tags}</li>
-            </StyledUl>
 
-            <div className="project-links">
+            <ProjectLinks>
                 <Button 
                     href={netlify} 
                     target="_blank"
-                    className="live-link"
+                    variant="live"
+                    ariaLabel={`Open live demo for ${title}`}
                 >
-                    Live
+                    Live Demo
                 </Button>
                 <Button
                     href={github} 
                     target="_blank"
-                    className="github-link"
+                    variant="code"
+                    ariaLabel={`Open GitHub for ${title} `}
                 >
-                    Code
+                    View Code
                 </Button>
-            </div>
+            </ProjectLinks>
         </Card>
     )
 }
@@ -40,21 +39,25 @@ export const ProjectCard = ({image,title,description,tags,netlify,github}) => {
 export const JourneyCard = ({image, date, title, text, link }) => {
     return (
         <Card>
-            <img
-                src={image}
-                alt=""
-                className="card-image"
-            />
-            <Heading4>{date}</Heading4>
-            <Heading3>{title}</Heading3>
-            <Paragraph>{text}</Paragraph>
-            <Button 
-                href={link}
-                target="_blank"
-                className="article-link"
-            >
-                Read Article
-            </Button>
+            <div>
+                <img
+                    src={image}
+                    alt=""
+                    className="card-image"
+                />
+                <Heading4>{date}</Heading4>
+                <Heading3>{title}</Heading3>
+                <Paragraph>{text}</Paragraph>
+            </div>
+            <ButtonWrapper>
+                <Button 
+                    href={link}
+                    target="_blank"
+                    ariaLabel={`Open article for ${title} `}
+                >
+                    Read Article
+                </Button>
+            </ButtonWrapper>
         </Card>
     )
 }
@@ -62,18 +65,27 @@ export const JourneyCard = ({image, date, title, text, link }) => {
 // Styled Component bellow
 
 const Card = styled.div`
+    width: 400px;
+    height: 950px;
+    flex-shrink: 0;
     background-color: #fff;
-    border-radius: 30px;
-    padding: 30px;
     display: flex;
     flex-direction: column;
-    flex-direction: center;
+    justify-content: space-between;
 
     img {
-        width: 200px;
-        height: auto;
+        width: 400px;
+        height:300px;
         object-fit: cover;
-        border-radius: 12px;
         margin-bottom: 20px;
     }
+`
+const ProjectLinks = styled.div`
+    display:flex;
+    justify-content: space-between;
+    gap: 16px;
+`
+
+const ButtonWrapper = styled.div`
+    margin-top: auto;
 `

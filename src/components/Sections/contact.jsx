@@ -1,7 +1,8 @@
 import styled from "styled-components"
 import profileImage from "../../images/hello3.png"
-import { Icon } from "../common/icons"
+import { Icon, IconRow } from "../common/icons"
 import { Heading2, Paragraph } from "../common/typography"
+
 
 export const Contact = () => {
     return (
@@ -15,8 +16,10 @@ export const Contact = () => {
                 <Heading2>Let's talk</Heading2>
                 <Paragraph>Asako Kanno</Paragraph>
                 <Paragraph>asako.k1317@outlook.com</Paragraph>
-                <Icon name="linkedin" size={28} />
-                <Icon name="github" size={28} />
+                <IconRow>
+                    <Icon name="linkedin" size={28} />
+                    <Icon name="github" size={28} />
+                </IconRow>
             </ContactInfo>
         </ContactContainer>
     )
@@ -28,9 +31,10 @@ const ContactContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 120px;
 
     img {
-        width: 300px;
+        width: 500px;
         height: auto;
     }
 `

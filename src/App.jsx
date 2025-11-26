@@ -1,4 +1,4 @@
-// import { GlobalStyle } from "../styles/globalStyles";
+import { GlobalStyle } from "./styles/globalStyles";
 import { ThemeProvider } from "styled-components";
 import { Projects } from "./components/Sections/projects";
 import { Contact } from "./components/Sections/contact";
@@ -10,6 +10,9 @@ import { Tech } from "./components/Sections/tech";
 export const App = () => {
   return (
     <>
+
+      <GlobalStyle />
+
       <Hero />
 
       <Skills />

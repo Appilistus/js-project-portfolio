@@ -1,3 +1,4 @@
+import styled from "styled-components"
 import githubIcon from "../../images/github.png"
 import linkedinIcon from "../../images/linkedin.png"
 
@@ -18,3 +19,9 @@ export const Icon = ({ name, size= 28 }) => {
         />
     )
 }
+
+export const IconRow = styled.div`
+    display:flex;
+    gap: 18px;
+    margin-top: 30px;
+`

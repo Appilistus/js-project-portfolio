@@ -50,7 +50,9 @@ const MySkills = styled.div`
 
 const SkillColumn = styled.div`
     text-align: center;
-    padding: 0 30px;
+    width: 180px;
+    margin: 12px;
+    padding-right: 20px;
 
     &:not(:last-child) {
         border-right: 2px solid #f28f28;
