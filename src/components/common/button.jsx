@@ -6,7 +6,7 @@ export const Button = ({ href, children,variant,ariaLabel }) => {
             href={href}
             target="_blank"
             variant={variant}
-            aria-label={ariaLabel}
+            aria-label={ariaLabel || children}
         >
             {children}
         </StyledButton>
@@ -15,13 +15,15 @@ export const Button = ({ href, children,variant,ariaLabel }) => {
 
 // Styled component below
 
-const StyledButton = styled.button`
+const StyledButton = styled.a`
     padding: 10px 16px;
     margin-top: 10px;
     border: 2px solid #1d5c5a;
     border-radius: 12px;
     text-decoration: none;
     cursor: pointer;
+    display:inline-block;
+    text-align: center;
 
     background-color: ${(props) => 
         props.variant === "live"

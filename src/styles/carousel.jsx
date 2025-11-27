@@ -20,6 +20,8 @@ export const Carousel = ({ data, renderItem }) => {
                     <SwiperSlide
                         key={index}
                         style={{ width: "400px"}}
+                        className="slide"
+                        tabIndex={0}
                     >
                         {renderItem(item)}
                     </SwiperSlide>
@@ -41,7 +43,7 @@ const CarouselWrapper = styled.div`
     }
 
     .swiper {
-        padding-bottom: 40px;
+        padding-bottom: 64px;
     }
 
     .swiper-scrollbar {
@@ -58,5 +60,15 @@ const CarouselWrapper = styled.div`
         background-color: #1d5c5a;
         border-radius: 20px;
         height: 18px;
+    }
+
+    .slide {
+        width: 400px;
+    }
+
+    @media (max-width: 744px) {
+        .slide {
+            width: 300px !important;
+        }
     }
 `

@@ -5,7 +5,7 @@ import { StyledUl } from "../../styles/theme"
 
 export const Skills = () => {
     return (
-        <>
+        <SkillsSection>
             <Heading2>Skills</Heading2>
             <MySkills>
                 {skills.skills.map((category) => {
@@ -30,11 +30,15 @@ export const Skills = () => {
                     )
                 })}
             </MySkills>
-        </>
+        </SkillsSection>
     )
 }
 
 // Styled component below
+
+const SkillsSection = styled.div`
+    margin: 64px 0;
+`
 
 const MySkills = styled.div`
     display: flex;

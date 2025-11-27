@@ -44,7 +44,7 @@ export const JourneyCard = ({image, date, title, text, link }) => {
                     src={image}
                     alt=""
                 />
-                <Heading4>{date}</Heading4>
+                <Heading4 as="h2">{date}</Heading4>
                 <Heading3>{title}</Heading3>
                 <Paragraph>{text}</Paragraph>
             </Content>
@@ -74,11 +74,22 @@ const Card = styled.div`
 
     @media (max-width: 744px) {
         width: 300px;
+        height: 555px;
         gap: 16px;
+
+        ${Paragraph} {
+            display: none;
+        }
     }
 
     &:hover {
         transform: translateY(-9px) scale(1.08);
+    }
+
+    @media (max-width: 1440px) {
+        .project-card:hover {
+            transform: none;
+        }
     }
 
     img {

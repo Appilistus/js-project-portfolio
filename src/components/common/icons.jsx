@@ -2,21 +2,32 @@ import styled from "styled-components"
 import githubIcon from "../../images/github.png"
 import linkedinIcon from "../../images/linkedin.png"
 
-export const Icon = ({ name, size= 28 }) => {
+export const Icon = ({ name, size= 28, href }) => {
     const icons = {
         github: githubIcon,
         linkedin: linkedinIcon,
     }
 
+    const labels = {
+        github: "Open Github profile",
+        linkedin: "Open Linkedin profile",
+    }
+
     const selectedIcon = icons[name]
+    const label = labels[name]
 
     return (
-        <img
-            src={selectedIcon}
-            alt={name + " icon"}
-            style={{ width: size, height: size}}
-            className="icon"
-        />
+        <a
+            href={href}
+            target="_blank"
+            aria-label={label}
+        >
+            <img
+                src={selectedIcon}
+                alt={`${name} icon`}
+                style={{ width: size, height: size}}
+            />
+        </a>
     )
 }
 

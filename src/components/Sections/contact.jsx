@@ -1,6 +1,7 @@
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
 import profileImage from "../../images/hello4.png"
 import { Icon, IconRow } from "../common/icons"
+import { iconLinks } from "../../data/iconLinks.json"
 import { Heading2, Paragraph } from "../common/typography"
 
 
@@ -15,12 +16,17 @@ export const Contact = () => {
                 />
             </ImageContainer>
             <ContactInfo>
-                <Heading2>Let's talk</Heading2>
+                <AnimatedHeading>Let's talk</AnimatedHeading>
                 <Paragraph>Asako Kanno</Paragraph>
                 <Paragraph>asako.k1317@outlook.com</Paragraph>
                 <IconRow>
-                    <Icon name="linkedin" size={28} />
-                    <Icon name="github" size={28} />
+                    {iconLinks.map((icon) => (
+                        <Icon
+                            key={icon.name}
+                            name={icon.name}
+                            href={icon.href}
+                        />
+                    ))}
                 </IconRow>
             </ContactInfo>
         </ContactContainer>
@@ -33,7 +39,7 @@ const ContactContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /* padding: 120px; */
+    margin: 64px 0;
 
     img {
         width: 500px;
@@ -58,4 +64,18 @@ const ContactInfo = styled.div`
     @media (max-width: 1440px) {
         text-align: center;
     }
+`
+
+const wobble = keyframes`
+    0% { transform: scale(1) rotate(0deg); }
+    25% { transform: scale(1.03) rotate(2deg); }
+    50% { transform: scale(1.03) rotate(-2deg); }
+    75% { transform: scale(1.03) rotate(1deg); }
+    100% { transform: scale(1) rotate(0deg); }
+`
+
+const AnimatedHeading = styled(Heading2)`
+    animation: ${wobble} 2s ease-in-out infinite;
+    display: inline-block;
+    transform-origin: center;
 `
