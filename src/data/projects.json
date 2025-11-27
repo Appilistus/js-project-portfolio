@@ -2,7 +2,7 @@
   "projects": [
     {
       "title": "Business site",
-      "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+      "image": "business",
       "description":"A responsive website introducing an AI learning platform designed for children. The design emphasizes clarity, warmth, and curiosity, creating a trustworthy experience for parents and educators. The layout adapts seamlessly across devices to maintain accessibility and engagement.",
       "tags": [
         "HTML5",
@@ -14,7 +14,7 @@
     },
     {
       "title": "Recipe app",
-      "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+      "image": "recipe",
       "description": "An interactive recipe platform that displays data from a public API with search, filter, and sorting functions. Built with a clean and friendly interface to inspire users to find quick, everyday recipes. Focused on intuitive interaction and consistent data structure to enhance usability.",
       "tags": [
         "HTML5",
@@ -27,7 +27,7 @@
     },
     {
       "title": "Weather app",
-      "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+      "image": "weather",
       "description": "A minimalist weather application displaying live data and a five-day forecast via an external API. The layout prioritizes readability and balance, offering weather insights at a glance. Designed with responsive structure and straightforward UI components for clarity.",
       "tags": [
         "HTML5",
@@ -41,7 +41,7 @@
     },
     {
       "title": "Web Accessibility app",
-      "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+      "image": "accessibility",
       "description": "A group project dedicated to promoting accessibility and inclusive web experiences. The site follows WCAG principles with attention to contrast, keyboard navigation, and semantic HTML. Highlights the importance of thoughtful design that serves every user equally.",
       "tags": [
         "HTML5",

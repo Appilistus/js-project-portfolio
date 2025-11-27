@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import profileImage from "../../images/hello3.png"
+import profileImage from "../../images/hello4.png"
 import { Icon, IconRow } from "../common/icons"
 import { Heading2, Paragraph } from "../common/typography"
 
@@ -7,11 +7,13 @@ import { Heading2, Paragraph } from "../common/typography"
 export const Contact = () => {
     return (
         <ContactContainer>
-            <img 
-                src={profileImage} 
-                alt="Asako Kanno profile picture"
-                className="contact-image"
-            />
+            <ImageContainer>
+                <img 
+                    src={profileImage} 
+                    alt="Asako Kanno profile picture"
+                    className="contact-image"
+                />
+            </ImageContainer>
             <ContactInfo>
                 <Heading2>Let's talk</Heading2>
                 <Paragraph>Asako Kanno</Paragraph>
@@ -31,14 +33,29 @@ const ContactContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 120px;
+    /* padding: 120px; */
 
     img {
         width: 500px;
         height: auto;
     }
+
+    @media (max-width: 1440px) {
+        flex-direction: column;
+    }
+`
+
+const ImageContainer = styled.div`
+    @media (max-width: 1440px) {
+        display: flex;
+        justify-content: center;
+    }
 `
 
 const ContactInfo = styled.div`
     padding-top: 20px; 
+
+    @media (max-width: 1440px) {
+        text-align: center;
+    }
 `

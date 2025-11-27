@@ -24,4 +24,9 @@ export const IconRow = styled.div`
     display:flex;
     gap: 18px;
     margin-top: 30px;
+
+    @media (max-width: 1440px) {
+        display: flex;
+        justify-content: center;
+    }
 `

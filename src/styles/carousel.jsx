@@ -32,8 +32,13 @@ export const Carousel = ({ data, renderItem }) => {
 // Styled component below
 
 const CarouselWrapper = styled.div`
-    margin-top: 40px;
-    padding-right: 40px;
+    margin-top: 60px;
+    padding: 0 40px;
+
+    @media (max-width: 1440px) {
+        margin: 0;
+        padding: 0;
+    }
 
     .swiper {
         padding-bottom: 40px;
@@ -46,11 +51,11 @@ const CarouselWrapper = styled.div`
         border-radius: 20px;
         height: 18px;
         width: 80%;
-        margin: 24px auto 0;
+        margin: 70px auto 0;
     }
 
     .swiper-scrollbar-drag {
-        background-color: #fd6f00;
+        background-color: #1d5c5a;
         border-radius: 20px;
         height: 18px;
     }

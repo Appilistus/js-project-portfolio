@@ -13,23 +13,25 @@ export const Button = ({ href, children,variant,ariaLabel }) => {
     )
 }
 
+// Styled component below
+
 const StyledButton = styled.button`
     padding: 10px 16px;
     margin-top: 10px;
-    border: 2px solid #FD6F00;
+    border: 2px solid #1d5c5a;
     border-radius: 12px;
     text-decoration: none;
     cursor: pointer;
 
     background-color: ${(props) => 
         props.variant === "live"
-            ? "#FD6F00"
+            ? "#1d5c5a"
             : "#fff"} ;
 
     color: ${(props) => 
         props.variant === "live"
             ? "#fff"
-            : "#FD6F00"} ;
+            : "#1d5c5a"} ;
 
     width: ${(props) => 
         props.variant === "live" && props.variant === "demo"
@@ -38,14 +40,19 @@ const StyledButton = styled.button`
 
     &:hover {
         background-color: ${(props) =>
-            props.variant === "live" ? "#fff" : "#fd6f00"};
+            props.variant === "live" ? "#fff" : "#1d5c5a"};
         color: ${(props) =>
-            props.variant === "live" ? "#fd6f00" : "#fff"};    
+            props.variant === "live" ? "#1d5c5a" : "#fff"};    
         transition: 0.2s ease;
     }
 
     &:focus-visible {
         outline: 3px solid #000;
         outline-offset: 4px;
+
+    }
+    
+    @media (max-width: 744px) {
+        width: 300px;
     }
 `

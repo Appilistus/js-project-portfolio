@@ -1,24 +1,24 @@
 {
     "journey": [
         {
-            "image":"https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+            "image":"img1",
             "date": "September 10th",
-            "title": "My Boot camp Beginning: Embracing the Unknown",
-            "text": "In August 2025 I embarked on my journey with Technigo’s front-end bootcamp, stepping into the world of JavaScript, React and web development. As a complete beginner I felt both excitement and uncertainty. Yet I recognised that real growth lies outside comfort zones. Each day I opened my Mac, hammered out my js project, sometimes encountering TypeScript errors—but rather than shrink back I embraced them as priceless learning moments. This early phase taught me resilience, curiosity and the invaluable mindset that every bug is an opportunity.",
+            "title": "My Boot camp Beginning",
+            "text": "Starting Technigo’s bootcamp was my first real step into coding. Even as a complete beginner, I learned to stay curious and face challenges. Those early errors and small wins taught me persistence and built my confidence.",
             "link": "link"
         },
         {
-            "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+            "image": "img2",
             "date": "September 25th",
-            "title": "Building My Recipe App: Learning by Doing",
-            "text": "One of my favorite learning moments was creating my own recipe app from scratch using HTML, CSS, and JavaScript. I wanted to make a simple and friendly space to share recipes. It wasn’t easy at first—my API worked but didn’t show the data correctly, and debugging felt endless. But solving those issues step by step taught me patience, structure, and how logic connects everything on a webpage. Building something real showed me that learning by doing is the best way to grow as a developer.",
+            "title": "Learning by Building a Recipe App",
+            "text": "Building my recipe app taught me more than any tutorial. Debugging issues like data not saving helped me understand structure and logic. Creating something real showed me that learning happens through practice.",
             "link": "link"
         },
         {
-            "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+            "image": "img3",
             "date": "November 11th",
-            "title": "Reflecting on the Journey: Growth and Mindset",
-            "text": "rLooking back on my coding journey so far, I realize that the most valuable lesson isn’t just about writing code—it’s about mindset. I’ve learned to stay curious, face errors calmly, and celebrate small progress every day. Studying in Technigo’s bootcamp has shown me that consistency matters more than perfection. Some days I move fast, other days I just fix one tiny bug—but both count as growth. Through this process, I’ve started to see myself not just as a learner, but as a developer in the making.",
+            "title": "Growing Through the Process",
+            "text": "My coding journey taught me that progress comes in many sizes. Some days are big wins, others small steps—but both matter. Each challenge in the bootcamp has helped me grow into a developing developer.",
             "link": "link"
         }
     ]

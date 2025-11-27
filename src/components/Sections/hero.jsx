@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import ProfileImg from "../../images/profile3.png"
+import ProfileImg from "../../images/profile4.png"
 import { Icon } from "../common/icons"
 import { Heading1, Heading3, Paragraph } from "../common/typography"
 import { IconRow } from "../common/icons"
@@ -19,13 +19,13 @@ export const Hero = () => {
                     <Icon name="github" size={28} />
                 </IconRow>
             </div>
-            <div>
+            <ImageContainer>
                 <img
                     src={ProfileImg}
                     alt="Asako Kanno profile image"
                     className="hero-image"
                 />
-            </div>
+            </ImageContainer>
         </HeroSection>
     )
 }
@@ -40,5 +40,21 @@ const HeroSection = styled.div`
     img {
         width: 500px;
         height: auto;
+    }
+
+    @media (max-width: 1440px) {
+        flex-direction: column;
+        padding: 64px 24px 0;
+        
+        img {
+            justify-content: center;
+        }
+    }
+`
+
+const ImageContainer = styled.div`
+    @media (max-width: 1440px) {
+        display: flex;
+        justify-content: center;
     }
 `

@@ -34,34 +34,37 @@ export const Skills = () => {
     )
 }
 
-
 // Styled component below
 
 const MySkills = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
 
-    @media (max-width: 700px) {
-        display: flex;
+    @media (max-width: 1440px) {
         flex-direction: column;
+        align-items: center;
     }
 `
 
 const SkillColumn = styled.div`
     text-align: center;
     width: 180px;
-    margin: 12px;
-    padding-right: 20px;
+    padding-right: 30px;
 
     &:not(:last-child) {
-        border-right: 2px solid #f28f28;
+        border-right: 2px solid #1d5c5a;
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 1440px) {
         &:not(:last-child) {
             border-right: none;
-            border-bottom: 2px solid #f28f28;
+            border-bottom: 2px solid #1d5c5a;
             padding-bottom: 20px;
             margin-bottom: 20px;
         }
