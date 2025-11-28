@@ -2,9 +2,13 @@ import styled from "styled-components"
 import { Button } from "./button"
 import { Heading3, Heading4, Paragraph } from "./typography"
 
-export const ProjectCard = ({image,title,description,netlify,github}) => {
+export const ProjectCard = ({ image, title, description, netlify, github, index }) => {
     return (
-        <Card className="project-card">
+        <Card 
+            className="project-card"
+            data-aos="fade-up"
+            data-aos-delay={index * 250}
+        >
             <Content>
                 <img 
                     src={image} 
@@ -36,9 +40,12 @@ export const ProjectCard = ({image,title,description,netlify,github}) => {
     )
 }
 
-export const JourneyCard = ({image, date, title, text, link }) => {
+export const JourneyCard = ({ image, date, title, text, link, index }) => {
     return (
-        <Card>
+        <Card
+            data-aos="fade-up"
+            data-aos-delay={index * 250}
+        >
             <Content>
                 <img
                     src={image}

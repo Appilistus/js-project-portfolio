@@ -16,10 +16,11 @@ export const Journey = () => {
                 
                 <Carousel 
                     data={journey.journey}
-                    renderItem={(item) => (
+                    renderItem={(item, index) => (
                         <JourneyCard 
                             {...item} 
                             image={imageMap[item.image]}
+                            index={index}
                         />
                     )}
                 />

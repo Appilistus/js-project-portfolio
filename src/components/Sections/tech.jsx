@@ -3,7 +3,7 @@ import { Heading2, Paragraph } from "../common/typography"
 
 export const Tech = () => {
     return (
-        <TechSkills>
+        <TechSkills data-aos="fade-up">
             <Heading2>Tech</Heading2>
             <Paragraph>
                 HTML, CSS, JavaScript, React, Node.js, Mongo DB, <br />

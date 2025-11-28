@@ -17,10 +17,11 @@ export const Projects = () => {
 
                 <Carousel
                     data={projects.projects}
-                    renderItem={(project) => (
+                    renderItem={(project, index) => (
                         <ProjectCard
                             {...project}
                             image={imgMap[project.image]} 
+                            index={index}
                         />
                     )}
                 />

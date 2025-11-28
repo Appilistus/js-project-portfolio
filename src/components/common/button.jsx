@@ -5,7 +5,7 @@ export const Button = ({ href, children,variant,ariaLabel }) => {
         <StyledButton
             href={href}
             target="_blank"
-            variant={variant}
+            $variant={variant}
             aria-label={ariaLabel || children}
         >
             {children}

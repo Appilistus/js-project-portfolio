@@ -4,7 +4,7 @@ import "swiper/css"
 import "swiper/css/scrollbar"
 import { Scrollbar, Mousewheel } from "swiper/modules"
 
-export const Carousel = ({ data, renderItem }) => {
+export const Carousel = ({ data, renderItem, index }) => {
     return (
         <CarouselWrapper>
             <Swiper
@@ -23,7 +23,7 @@ export const Carousel = ({ data, renderItem }) => {
                         className="slide"
                         tabIndex={0}
                     >
-                        {renderItem(item)}
+                        {renderItem(item, index)}
                     </SwiperSlide>
                 ))}
             </Swiper>

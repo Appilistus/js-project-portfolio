@@ -5,7 +5,7 @@ import { StyledUl } from "../../styles/theme"
 
 export const Skills = () => {
     return (
-        <SkillsSection>
+        <SkillsSection data-aos="fade-up">
             <Heading2>Skills</Heading2>
             <MySkills>
                 {skills.skills.map((category) => {
